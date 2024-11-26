@@ -18,17 +18,25 @@
         />
     </head>
 
-    <body>
+    <body class="bg-primary">
         <header>
             <!-- place navbar here -->
         </header>
         <main>
+        <div class="container">
+        <div class="row">
             <div id="magic 8-ball">
                 <h1 class="text-center">Magic Conch</h1>
-                <p id="greeting"></p>
-                <p id="response-text" class="text-center">Ask the glorious Magic Conch a question</p>
-                <img id="response-img" src="https://picsum.photos/200" alt=""></img>
-                <button onclick="shakeMagicConch()" class="btn btn-success">Click to Ask the Conch</button>
+                <p id="greeting" class="text-center"></p>
+        </div>
+        <div class="row col-12">
+            <button onclick="shakeMagicConch()" class="btn btn-success border border-2 ">Click to Ask the Conch</button>
+        </div>
+        </div>
+                <p id="response-text" class="text-center">Ask the glorious Magic Conch a question!</p>
+        <div class="row" class="justify-content-center d-flex col-6">
+                <img id="response-img" src="IMGS/Magic Conch.png" alt=""></img>
+        </div>
 
 
 

@@ -1,29 +1,41 @@
 //Get Username
 let userName = prompt('Whats your name?')
+
+let responseImg = document.getElementById('response-img')
+let responseText = document.getElementById('response-text')
+let Greet = document.getElementById('greeting')
+
+
 //Put username in website
-userName ? document.getElementById('greeting').innerText=`Hello, ${userName}` : document.getElementById('greeting').innerText=`Your name is Jeremiah now hello Jeremiah`;
+userName 
+? (Greet.innerText=`Hello, ${userName}`)
+: (Greet.innerText=`Your name is Jeremiah now hello Jeremiah`)
 
 function shakeMagicConch(){
 //Get the question
-let userQuestion = 'What would you like to ask the conch?'
-console.log(userQuestion);
+let userQuestion = prompt('What would you like to ask the conch?')
+
+
+
+
 
 //DO NOTTA TOUCHA THIS CODE!!!
 let randomNumber = Math.floor(Math.random() * 8)
 let eightBall = ''
+let imageChoice = ''
 //All possible answers
 switch (randomNumber) {
   case 0:
-    eightBall = 'It is certain';
+    imageChoice = 'IMGS/It is Certain.png'
     break;
   case 1:
-    eightBall = 'It is decidedly so';
+    imageChoice = 'IMGS/Decidedly.png'
     break;
   case 2:
-    eightBall = 'Reply hazy try again';
+    imageChoice = 'IMGS/Hazy.png'
     break;
   case 3:
-    eightBall = 'Cannot predict now';
+    imageChoice = 'IMGS/Predict.png'
     break;
   case 4:
     eightBall = 'Do not count on it';
@@ -38,6 +50,8 @@ switch (randomNumber) {
     eightBall = 'Signs point to yes';
     break;
 }
-
 console.log('eightBall')
+
+responseText.innerText =`The almighty magic conch says ${eightBall}!`
+responseImg.src = imageChoice
 }
