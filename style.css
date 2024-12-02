@@ -1,5 +1,10 @@
-main {
-    background: url(IMGS/BB.png);
+body {
+    background: url(IMGS/Bottom.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+img {
+    max-width: 100px;
+    max-height: 735px;
 }

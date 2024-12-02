@@ -20,38 +20,32 @@ let userQuestion = prompt('What would you like to ask the conch?')
 
 
 //DO NOTTA TOUCHA THIS CODE!!!
-let randomNumber = Math.floor(Math.random() * 8)
+let randomNumber = Math.floor(Math.random() * 6)
 let eightBall = ''
 let imageChoice = ''
 //All possible answers
 switch (randomNumber) {
   case 0:
-    imageChoice = 'IMGS/It is Certain.png'
+    imageChoice = 'IMGS/Certain.png';
     break;
   case 1:
-    imageChoice = 'IMGS/Decidedly.png'
+    imageChoice = 'IMGS/Death.png';
     break;
   case 2:
-    imageChoice = 'IMGS/Hazy.png'
+    imageChoice = 'IMGS/Yes.png';
     break;
   case 3:
-    imageChoice = 'IMGS/Predict.png'
+    imageChoice = 'IMGS/No.png';
     break;
   case 4:
-    eightBall = 'IMGS/Count.png'
+    imageChoice = 'IMGS/Perchance.png';
     break;
   case 5:
-    eightBall = 'IMGS/Sources.png'
-    break;
-  case 6:
-    eightBall = 'IMGS/Outlook.png'
-    break;
-  case 7:
-    eightBall = 'IMGS/Signs.png'
+    imageChoice = 'IMGS/Signs.png';
     break;
 }
 console.log('eightBall')
 
-responseText.innerText =`The almighty magic conch says ${eightBall}!`
+responseText.innerText =`The almighty magic conch says!`
 responseImg.src = imageChoice
 }
