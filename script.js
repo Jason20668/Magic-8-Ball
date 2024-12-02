@@ -38,16 +38,16 @@ switch (randomNumber) {
     imageChoice = 'IMGS/Predict.png'
     break;
   case 4:
-    eightBall = 'Do not count on it';
+    eightBall = 'IMGS/Count.png'
     break;
   case 5:
-    eightBall = 'My sources say no';
+    eightBall = 'IMGS/Sources.png'
     break;
   case 6:
-    eightBall = 'Outlook not so good';
+    eightBall = 'IMGS/Outlook.png'
     break;
   case 7:
-    eightBall = 'Signs point to yes';
+    eightBall = 'IMGS/Signs.png'
     break;
 }
 console.log('eightBall')
