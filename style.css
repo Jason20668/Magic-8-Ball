@@ -1,10 +1,11 @@
 body {
-    background: url(IMGS/Bottom.png);
-    background-repeat: no-repeat;
+    background: url(IMGS/Ocean.jpg);
+    background-repeat: repeat;
     background-size: cover;
 }
 
+
 img {
     max-width: 100px;
-    max-height: 735px;
+    max-height: 730px;
 }
